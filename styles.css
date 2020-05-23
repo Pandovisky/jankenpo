@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    height: 100vh;
+
+}
+
+
+h1 {
+    display: flex;
+    justify-content: center;
+}
+
+.board {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+}
+
+.jogadap {
+    background-image: url(images/escolhendo.png);
+    height: 400px;
+    width: 400px;
+    margin-left: 40px;
+    transform: scaleX(-1);
+}
+
+.jogadab {
+    background-image: url(images/escolhendo.png);
+    height: 400px;
+    width: 400px;
+    margin-right: 40px;
+}
+
+.versus {
+    font-size: 200px;
+}
+
+#escolhas {
+    justify-content: space-around;
+    display: flex;
+    margin-top: 16px;
+    
+}
+
+.pedra {
+    background-image: url(images/pedra.png);
+    height: 400px;
+    width: 400px;
+}
+
+.papel {
+    background-image: url(images/papel.png);
+    height: 400px;
+    width: 400px;
+}
+
+.tesoura {
+    background-image: url(images/tesoura.png);
+    height: 400px;
+    width: 400px;
+}
+
+#gameend {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    left: 0;
+    top: 0;
+}
+#gameend.active {
+    display: flex;
+}

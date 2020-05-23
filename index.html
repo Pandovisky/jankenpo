@@ -1,0 +1,26 @@
+<head>
+    <meta charset="UTF-8">
+    <title>Jankenpo</title>
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.15/lodash.min.js"></script>
+    <script src="core.js"></script>
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <h1>JAN KEN PO</h1>
+<div class="board">
+    <div class="jogadap" id="player"></div>
+    <div class="versus">VS</div>
+    <div class="jogadab" id="bot"></div>
+</div>
+<div id="escolhas">
+    <a id="pedra" class="pedra" onclick=escolher(this.id)></a>
+    <a id="papel" class="papel" onclick=escolher(this.id)></a>
+    <a id="tesoura" class="tesoura" onclick=escolher(this.id)></a>
+</div>
+<div id="gameend">
+    <div id="resultado"></div>
+    <button onclick="reset()">Play again</button>
+</div>
+
+</body>
